@@ -15,11 +15,11 @@ void insert_at_tail(Node*& head, int v) {
         head = newNode;
         return;
     }
-    Node* temp = head;
-    while (temp->next != NULL) {
-        temp = temp->next;
+    Node* tmp = head;
+    while (tmp->next != NULL) {
+        tmp = tmp->next;
     }
-    temp->next = newNode;
+    tmp->next = newNode;
 }
 void print_linked_list(Node* head) {
     Node* tmp = head;
